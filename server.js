@@ -9,8 +9,12 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Home Page', message: 'Welcome to EJS!' });
 });
 
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About Page' });
+app.get('/register', (req, res) => {
+    res.render('register', { title: 'Register Page' });
+});
+
+app.get('/login', (req, res) => {
+    res.render('login', {title : 'Login Page'});
 });
 
 const PORT = 3000;
